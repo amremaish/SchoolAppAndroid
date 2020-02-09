@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".Activities.exams.AddExamActivity">
+
+
+
+    <RelativeLayout
+
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/circle"
+                    android:padding="10dp"
+                    android:src="@drawable/strategy"/>
+
+        </LinearLayout>
+
+
+
+        <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:rotation="45"
+                android:src="@drawable/square"/>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/imageView1"
+                android:background="@color/colorBackground"
+                android:layout_height="540dp"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="match_parent">
+
+                <EditText
+                        android:id="@+id/add_exam_name"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="40dp"
+                        android:layout_height="54dp"
+                        android:background="@color/editTextBG"
+                        android:hint="Here type Your title"
+                        android:inputType="textMultiLine"
+                        android:padding="10dp"
+                        android:scrollbars="vertical" />
+
+                <EditText
+                        android:id="@+id/max_score_exam"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="50dp"
+                        android:layout_height="54dp"
+                        android:background="@color/editTextBG"
+                        android:hint="Here type exam score"
+                        android:inputType="textMultiLine"
+                        android:padding="10dp"
+                        android:scrollbars="vertical" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout6"
+                        android:layout_marginTop="50dp"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Created by : "
+                            android:textColor="@color/colorAccent" />
+
+                    <TextView
+                            android:id="@+id/exam_teacher_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Teacher name"
+                            android:padding="10dp"
+                            android:textColor="@color/colorAccent" />
+
+
+                </LinearLayout>
+
+                <Button
+                        android:layout_marginTop="100dp"
+                        android:layout_width="179dp"
+                        android:layout_height="44dp"
+                        android:onClick="submitExamAction"
+                        android:layout_gravity="center"
+                        android:background="@drawable/confirm_button"
+                        android:text="Submit" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

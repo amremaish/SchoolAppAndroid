@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+              android:layout_margin="20dp"
+              android:elevation="5dp"
+              android:id="@+id/exam_layout"
+              android:background="@color/colorAccent"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+                 android:layout_height="150dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/mat_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@color/colorGreen"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+                android:id="@+id/exam_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_shadow_start_color"
+                android:padding="5dp"
+                android:text="Name of Exam"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/mat_img"
+                app:layout_constraintEnd_toEndOf="@+id/mat_img"
+                app:layout_constraintStart_toStartOf="@+id/mat_img"
+                app:layout_constraintTop_toTopOf="@+id/mat_img" />
+
+        <LinearLayout
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+        <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Created by :"
+                android:textColor="@color/colorBackground"
+                android:textSize="13dp"
+               />
+            <TextView
+                    android:id="@+id/teacher_exam_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Name of teacher"
+                    android:textColor="@color/colorBackground"
+                    android:textSize="13dp"
+                    />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

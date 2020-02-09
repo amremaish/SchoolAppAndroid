@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name"><![CDATA[Teaching]]></string>
+    <string name="slogan">معك اينما كنت</string>
+    <string name="title">Learning Machine</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up_link">
+        <u>Sign up</u>
+    </string>
+    <string name="forget_password">Forget Password.?</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!--Home-->
+    <string name="Materials">Materials</string>
+    <string name="Messages">Messages</string>
+    <string name="Profile">Profile</string>
+    <string name="Settings">Settings</string>
+    <string name="Exams">Exams</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+
+    <!--navigation-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">username</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="menu_account">Account</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_setting">Settings</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_profile">Profile</string>
+
+    <!--MaterialsActivity-->
+    <string name="Material_header">Materials</string>
+    <string name="Material_Title">Title</string>
+    <string name="title_activity_chatting">ChattingActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+
+</resources>

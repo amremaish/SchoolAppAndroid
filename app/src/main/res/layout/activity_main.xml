@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".Activities.Authentication.LoginActivity">
+
+
+
+    <ImageView
+            android:id="@+id/bookIconImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:src="@drawable/strategy"/>
+
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-4dp"
+        android:foregroundGravity="bottom"
+        android:indeterminate="true"
+        android:padding="0dp"
+        android:theme="@style/ProgressBarStyle" />
+
+
+    <RelativeLayout
+            android:id="@+id/afterAnimationView"
+            android:layout_width="386dp"
+            android:layout_height="732dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+        <ImageView
+                android:id="@+id/bookIconImageView1"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/strategy"/>
+
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/loginButton"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="-6dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/colorTextView"
+                    android:textSize="15sp"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/colorTextView"
+                    android:textSize="15sp"/>
+
+
+            <TextView
+                    android:onClick="forgetPasswordAction"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/forget_password"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="14sp"
+
+                    android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/loginButton"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You don't have an email ? "
+                    android:textColor="@color/colorTextView"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_link"
+                    android:id="@+id/sign_up"
+                    android:textColor="@color/colorProgressBar"
+                    android:textSize="14sp"
+                    android:onClick="SignUpAction"
+                    android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_drawable"
+                android:text="@string/login"
+
+                android:onClick="LoginAction"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
