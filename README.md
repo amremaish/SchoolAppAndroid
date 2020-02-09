@@ -3,6 +3,10 @@
 The main of the “school Application” is to help parent connect easily with their children’s teachers. 
 it provides a mechanism for following the Student's level , allowing parents to know his materials and can easily contact with each other by chatting .
 
+You can see also web application version 
+https://github.com/amremaish/SchoolAppLaravel
+
+
 ## Login
 <p align="center">
   <img src="https://i.ibb.co/TqwX4pt/Screenshot-2020-02-09-06-14-51-111-com-example-School-App.jpg" width="350" title="Login">
