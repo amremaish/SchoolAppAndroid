@@ -1,7 +1,7 @@
 # School App
 
 The main of the “school Application” is to help parent connect easily with their children’s teachers. 
-it provides a mechanism for following the Student's level , allowing parents to know his materials. 
+it provides a mechanism for following the Student's level , allowing parents to know his materials and can easily contact with each other by chatting .
 
 ## Login
 <p align="center">
